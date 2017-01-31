@@ -50,12 +50,12 @@ namespace ObjectOrientedProgrammingConcept.Constructor
     // you can not inherit the class having private constructor
     class CallingClasss //: PrivateConstructor
     {
-        static void Main(string[] args)
-        {
-            // U can create the object of the class having private constructor from other classes which type of constructor is set a private like default, parameterize etc.
-            //PrivateConstructor objPrivateConst = new PrivateConstructor(); // uncomment this like will give error
-            PrivateConstructor objPublicConst = new PrivateConstructor(10, 30);
-            Console.ReadLine();
-        }
+        //static void Main(string[] args)
+        //{
+        //    // U can create the object of the class having private constructor from other classes which type of constructor is set a private like default, parameterize etc.
+        //    //PrivateConstructor objPrivateConst = new PrivateConstructor(); // uncomment this like will give error
+        //    PrivateConstructor objPublicConst = new PrivateConstructor(10, 30);
+        //    Console.ReadLine();
+        //}
     }
 }

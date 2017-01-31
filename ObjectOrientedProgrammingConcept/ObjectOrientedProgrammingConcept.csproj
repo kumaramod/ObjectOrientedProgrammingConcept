@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constructor\PrivateConstructor.cs" />
+    <Compile Include="Interface\Interface.cs" />
+    <Compile Include="Interface\InterfaceDecoupling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
