@@ -91,17 +91,17 @@ namespace ObjectOrientedProgrammingConcept.Interface
     /// </summary>
     class InterfaceDecoupling
     {
-        static void Main()
-        {
-            //Way to achive decupling
-            IShip objAirjet = objectCreater.CreateObject(1);
-            objAirjet.ShipName();
+        //static void Main()
+        //{
+        //    //Way to achive decupling
+        //    IShip objAirjet = objectCreater.CreateObject(1);
+        //    objAirjet.ShipName();
 
 
-            // 2nd example of decoupling
-            IPerson objPerson = PersonSupplyer.ReturnPerson("INDIA");
-            objPerson.ShowCountry();
-            Console.ReadLine();
-        }
+        //    // 2nd example of decoupling
+        //    IPerson objPerson = PersonSupplyer.ReturnPerson("INDIA");
+        //    objPerson.ShowCountry();
+        //    Console.ReadLine();
+        //}
     }
 }
