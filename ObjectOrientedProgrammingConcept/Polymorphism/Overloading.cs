@@ -77,17 +77,17 @@ namespace ObjectOrientedProgrammingConcept.Polymorphism
 
     public class Program
     {
-        static void Main(string[] args)
-        {
-            Overloading overload = new Overloading();
-            overload.DisplayOverload(100);
-            overload.DisplayOverload("method overloading");
-            overload.DisplayOverload("method overloading", 100);
+        //static void Main(string[] args)
+        //{
+        //    Overloading overload = new Overloading();
+        //    overload.DisplayOverload(100);
+        //    overload.DisplayOverload("method overloading");
+        //    overload.DisplayOverload("method overloading", 100);
 
-            overload.displayNameByRef();
-            overload.displayNameByValue();
-            Console.ReadKey();
-        }
+        //    overload.displayNameByRef();
+        //    overload.displayNameByValue();
+        //    Console.ReadKey();
+        //}
     }
 
 
