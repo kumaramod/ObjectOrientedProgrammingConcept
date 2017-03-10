@@ -8,7 +8,7 @@ namespace ObjectOrientedProgrammingConcept.LINQ
 {
     public class LINQ
     {
-        static void Main(string[] args)
+        public void LINQExamples()
         {
             List<Customer> customers = new List<Customer>()
             {
@@ -72,9 +72,9 @@ namespace ObjectOrientedProgrammingConcept.LINQ
             }
 
             Console.WriteLine("---------------------------Example of group by----------------------------------");
-            
+
             var customerListByGroupBy = from cust in customers
-                               group cust by cust.CustomerCity;
+                                        group cust by cust.CustomerCity;
 
             foreach (var customerGroup in customerListByGroupBy)
             {
@@ -89,18 +89,26 @@ namespace ObjectOrientedProgrammingConcept.LINQ
 
             var innerJoinQuery = from cust in customers
                                  join custDetails in customerDetails on cust.CustomerID equals custDetails.CustomerID
-                                 select new { CustomerName = cust.CustomerName, CustomerCity = cust.CustomerCity, CustomerMobileNumber= custDetails.CustomerMobileNumber };
+                                 select new { CustomerName = cust.CustomerName, CustomerCity = cust.CustomerCity, CustomerMobileNumber = custDetails.CustomerMobileNumber };
 
             var innerJoinQuery1 = from cust in customers
-                                 join custDetails in customerDetails on cust.CustomerID equals custDetails.CustomerID
-                                 select new { cust.CustomerName, cust.CustomerCity, custDetails.CustomerMobileNumber };
+                                  join custDetails in customerDetails on cust.CustomerID equals custDetails.CustomerID
+                                  select new { cust.CustomerName, cust.CustomerCity, custDetails.CustomerMobileNumber };
 
             foreach (var customer in innerJoinQuery)
             {
                 Console.WriteLine("Customer Name={0}, Customer City={1}, Customer Mobile Number={2}", customer.CustomerName, customer.CustomerCity, customer.CustomerMobileNumber);
             }
-
-            Console.ReadKey();
         }
     }
+
+    //public class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        LINQ linq = new LINQ();
+    //        linq.LINQExamples();
+    //        Console.ReadKey();
+    //    }
+    //}
 }

@@ -45,6 +45,7 @@
     <Compile Include="Interface\Interface.cs" />
     <Compile Include="Interface\InterfaceDecoupling.cs" />
     <Compile Include="LINQ\Customer.cs" />
+    <Compile Include="LINQ\EnumerableMethods.cs" />
     <Compile Include="LINQ\LINQ.cs" />
     <Compile Include="Polymorphism\Overloading.cs" />
     <Compile Include="Program.cs" />
