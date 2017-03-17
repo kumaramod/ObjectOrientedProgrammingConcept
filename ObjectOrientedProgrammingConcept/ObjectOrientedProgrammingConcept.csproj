@@ -49,6 +49,7 @@
     <Compile Include="LINQ\LINQ.cs" />
     <Compile Include="Polymorphism\Overloading.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Programs\StringOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
